@@ -6,6 +6,7 @@ import { Careers } from "./components/Careers/Careers";
 import { Solutions } from "./components/Solutions/Solutions";
 import { Contact } from "./components/Contact/Contact";
 import { JoinUs } from "./components/JoinUs/JoinUs";
+import { NotFound } from "./components/NotFound/NotFound";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
           <Route path="/careers" element={<Careers />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/join" element={<JoinUs />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </>

@@ -6,7 +6,11 @@ export const Header = () => {
   return (
     <div className="header-container">
       <div className="brand">
-        <Link to="/">GOLALUS</Link>
+        <Link to="/">
+          <h5>ZEGA</h5>
+          <p className="subtitle">Technologies</p>
+        </Link>
+        
       </div>
       <div className="active">
         <span class="burger">

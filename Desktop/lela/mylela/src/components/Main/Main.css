@@ -1,0 +1,112 @@
+.headline-container {
+  color: rgb(255, 255, 255);
+  background-color: rgb(32, 114, 114);
+  background: linear-gradient(90deg, rgb(12, 88, 88), rgba(31, 138, 138, 0.8)),
+    url("../assets/business.jpg");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  width: 100vw;
+  padding: 40px 100px;
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+}
+.headline {
+  font-size: 70px;
+  font-weight: 700;
+  /* margin-left: 40px; */
+}
+.sub-headline {
+  width: 50%;
+  margin-top: 30px;
+  font-size: 36px;
+  /* margin-left: 40px; */
+}
+@media screen and (max-width: 1030px) {
+  .headline-container {
+    padding: 40px 60px;
+  }
+}
+@media screen and (max-width: 740px) {
+  .sub-headline {
+    width: 90%;
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .sub-headline {
+    width: 100%;
+    font-size: 28px;
+    margin-top: 10px;
+  }
+  .headline {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .sub-headline {
+    font-size: 24px;
+  }
+}
+
+/* Services */
+
+.home-service {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+
+  padding: 100px;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #f7f7f7;
+}
+.home-title {
+  color: #008980;
+  font-weight: 700;
+  padding-top: 20px;
+  text-align: center;
+}
+.home_features {
+  display: flex;
+  width: 100%;
+  padding: 100px 40px;
+  gap: 40px;
+}
+.home_feature-services {
+  width: 50%;
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+
+  text-align: center;
+}
+.home_feature-services h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: black;
+}
+.home_feature-services i {
+  font-size: 60px;
+  color: #008980;
+}
+@media screen and (max-width: 1030px) {
+  .home_features {
+    flex-direction: column;
+    align-items: center;
+  }
+  .home_feature-services {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .home_features {
+    padding: 60px 10px;
+  }
+  .home-service {
+    padding: 40px;
+  }
+}
