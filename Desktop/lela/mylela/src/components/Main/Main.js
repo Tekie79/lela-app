@@ -1,5 +1,6 @@
 import "./Main.css";
 import { Services } from "./features/services";
+import { Difference } from "./features/difference";
 export const Main = () => {
   return (
     <div className="main-container">
@@ -11,6 +12,7 @@ export const Main = () => {
         </h3>
       </div>
       <Services />
+      <Difference/>
     </div>
   );
 };
