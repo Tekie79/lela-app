@@ -8,6 +8,7 @@ import { Contact } from "./components/Contact/Contact";
 import { Login } from "./components/Login/Login";
 import { NotFound } from "./components/NotFound/NotFound";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 export default function App() {
   return (
     <>
