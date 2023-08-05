@@ -1,18 +1,25 @@
 import "./Main.css";
+import { HomeCard } from "./homeCard";
 import { Services } from "./features/services";
 import { Difference } from "./features/difference";
+import { Global } from "../reusable/global/global";
+import image from "../assets/business.jpg";
+import { homeGlobalData } from "../../datas/allDatas";
+import { Profile } from "./Profile";
 export const Main = () => {
+  const homeData = {
+    headline: "Work, meet flow",
+    subtitle:
+      "Spend more time on the stuff that matters. Let us worry about the rest.",
+    image: image,
+  };
   return (
     <div className="main-container">
-      <div className="headline-container">
-        <h1 className="headline">Work, meet flow</h1>
-        <h3 className="sub-headline">
-          Spend more time on the stuff that matters. Let us worry about the
-          rest.
-        </h3>
-      </div>
+      <HomeCard data={homeData} />
       <Services />
-      <Difference/>
+      <Difference />
+      <Global globalData={homeGlobalData} link="/careers" />
+      <Profile />
     </div>
   );
 };

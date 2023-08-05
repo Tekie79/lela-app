@@ -1,16 +1,16 @@
-.main-container{
+.main-container {
   width: 100vw;
 }
 .headline-container {
   color: rgb(255, 255, 255);
-  background-color: rgb(32, 114, 114);
-  background: linear-gradient(90deg, rgb(12, 88, 88), rgba(31, 138, 138, 0.8)),
-    url("../assets/business.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  /* background-color: rgb(32, 114, 114); */
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
   width: 100%;
   padding: 40px 100px;
   height: 440px;
+  max-height: 600px;
   display: flex;
   flex-direction: column;
 }
@@ -21,15 +21,15 @@
 }
 .sub-headline {
   width: 50%;
-  margin-top: 30px;
-  font-size: 36px;
+  margin-top: 26px;
+  font-size: 30px;
   /* margin-left: 40px; */
 }
 
 /* Services */
 
 .home-service {
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
 
@@ -39,11 +39,14 @@
 
   background-color: #f7f7f7;
 }
-.home-title, .differences h1 {
+.home-title,
+.differences h1 {
   color: #008980;
   font-weight: 700;
   padding-top: 20px;
   text-align: center;
+  font-size: 48px;
+  font-family: "Poppins", sans-serif;
 }
 .home_features {
   display: flex;
@@ -75,7 +78,7 @@
 .differences {
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
   align-items: center;
   padding: 60px;
 }
@@ -96,18 +99,21 @@
   padding: 60px;
   border-radius: 5px;
 }
-.diff_description h2{
+.diff_description h2 {
   color: black;
   font-size: 42px;
   font-weight: 600;
   padding-bottom: 20px;
 }
 .diff_image {
-  width: 100%;
+  width: 95%;
   border-radius: 100%;
 }
 /* RESPONSIVE */
 @media screen and (max-width: 1030px) {
+  .sub-headline {
+    font-size: 25px;
+  }
   .home_features {
     flex-direction: column;
     align-items: center;
@@ -116,35 +122,34 @@
     width: 100%;
   }
   /* diefference section */
-  .difference_card{
+  .difference_card {
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
-    
   }
   .diff_description,
-.diff_image-container {
-  width: 100%;
-}
-.diff_image-container{
-  display: flex;
-  justify-content: center;
-}
-.diff_image{
-  width: 60%;
-}
+  .diff_image-container {
+    width: 100%;
+  }
+  .diff_image-container {
+    display: flex;
+    justify-content: center;
+  }
+  .diff_image {
+    width: 60%;
+  }
 }
 @media screen and (max-width: 600px) {
   .home_features {
     padding: 60px 10px;
   }
   .home-service {
-    padding: 40px;
+    padding: 20px 40px;
   }
-  .differences{
+  .differences {
     padding: 60px 25px;
   }
-  .diff_description{
+  .diff_description {
     padding: 60px 25px;
   }
 }
@@ -162,21 +167,28 @@
 @media screen and (max-width: 740px) {
   .sub-headline {
     width: 90%;
-    font-size: 30px;
+    font-size: 20px;
+  }
+  .headline {
+    font-size: 60px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 550px) {
   .sub-headline {
     width: 100%;
-    font-size: 28px;
+
     margin-top: 10px;
   }
   .headline {
     font-size: 50px;
   }
 }
-@media screen and (max-width: 350px) {
-  .sub-headline {
-    font-size: 24px;
+
+@media screen and (max-width: 420px) {
+  .headline {
+    font-size: 36px;
+  }
+  .headline-container {
+    padding: 40px 20px;
   }
 }

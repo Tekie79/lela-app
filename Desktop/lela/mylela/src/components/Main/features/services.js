@@ -4,7 +4,7 @@ export const Services = () => {
       <h1 className="home-title">What can we do for you?</h1>
       <div className="home_features">
         <div className="home_feature-services">
-          <i class="fa-solid fa-people-arrows"></i>
+          <i className="fa-solid fa-people-arrows"></i>
           <h3>Consulting Services</h3>
           <p>
             We’re here to help you answer the big questions. No fancy
@@ -12,7 +12,7 @@ export const Services = () => {
           </p>
         </div>
         <div className="home_feature-services">
-        <i class="fa-solid fa-person-arrow-up-from-line"></i>
+          <i className="fa-solid fa-person-arrow-up-from-line"></i>
           <h3>Talent Services</h3>
           <p>
             We run your apps, so you don’t have to think about it. We'll take
