@@ -8,7 +8,7 @@ import { Contact } from "./components/Contact/Contact";
 import { Login } from "./components/Login/Login";
 import { NotFound } from "./components/NotFound/NotFound";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import { Footer } from "./components/footer/footer";
 export default function App() {
   return (
     <>
@@ -23,6 +23,7 @@ export default function App() {
           <Route path="/login" element={<Login />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </>
   );

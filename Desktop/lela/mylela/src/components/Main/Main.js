@@ -6,6 +6,12 @@ import { Global } from "../reusable/global/global";
 import image from "../assets/business.jpg";
 import { homeGlobalData } from "../../datas/allDatas";
 import { Profile } from "./Profile";
+import { AdditionalContent } from "./additionalContent/additionalContent";
+
+//
+
+
+// Main Component
 export const Main = () => {
   const homeData = {
     headline: "Work, meet flow",
@@ -20,6 +26,7 @@ export const Main = () => {
       <Difference />
       <Global globalData={homeGlobalData} link="/careers" />
       <Profile />
+      <AdditionalContent/>
     </div>
   );
 };

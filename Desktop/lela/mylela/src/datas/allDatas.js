@@ -1,5 +1,6 @@
 import profilePicture01 from "../images/yoni.jpg";
 import profilePicture02 from "../images/adme.jpg";
+import footerImage01 from "../images/footer01.jpg";
 // Global Section
 export const homeGlobalData = {
   title: "We're a global community",
@@ -31,3 +32,44 @@ export const profileData = [
     department: "Talent Development Lead",
   },
 ];
+
+// Additional Content cards
+
+export const additionalData = [
+  {
+    id: 1,
+    iconClass: "fa-solid fa-heart-circle-check",
+    title: "Engaged Empathy",
+    description: "We listen actively to create solutions that fit the need",
+  },
+  {
+    id: 2,
+    iconClass: "fa-solid fa-comment-dots",
+    title: "Productive Candor",
+    description:
+      "We harness honest, constructive conversations to support informed decision-making",
+  },
+  {
+    id: 3,
+    iconClass: "fa-solid fa-handshake",
+    title: "Earned Trust",
+    description: "We build credibility through our actions, not just our words",
+  },
+  {
+    id: 4,
+    iconClass: "fa-solid fa-truck-fast",
+    title: "Overdeliver",
+    description: "We know that “good enough” is not always good enough",
+  },
+];
+
+// Footer Data
+
+export const footerData = {
+  title: "Partner With Us",
+  description:
+    "Whether you need help developing your app, managing your tech or ideas on how to make your IT teams more efficient – we can help.",
+  btnName: "Book A Call",
+  linkAddress: "/contact",
+  image: footerImage01,
+};
